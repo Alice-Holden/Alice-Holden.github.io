@@ -1,0 +1,1141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: "Minion Pro";
+}
+
+input, textarea {
+  outline: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 760px) {
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .nav {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+
+  .nav__showmenu {
+    position: fixed;
+    z-index: 11;
+    display: inline-block;
+    margin-left: -10px;
+    padding: 25px 10px 10px;
+    font-size: 23px;
+  }
+
+  .nav__back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding-top: 10px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 220px;
+    background-color: #333333;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .menu a {
+    padding: 20px 10px;
+  }
+
+  .menu__showsub {
+    position: absolute;
+    right: 0;
+    margin-top: -34px;
+    padding: 10px;
+    line-height: normal;
+  }
+
+  .menu__item {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu__item {
+    color: #f4f4f4;
+  }
+
+  .nav__check:checked ~ .nav__back {
+    background-color: rgba(0, 199, 234, 0.1);
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .menu__item:hover, .nav__showmenu:hover, .menu__showsub:hover {
+    opacity: 0.7;
+  }
+
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav__check:checked + .nav__showmenu {
+    color: #fff;
+  }
+
+  .menu__check:checked + .menu__showsub {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+
+  .nav__check:checked ~ .menu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .borderPortfolio {
+    position: absolute;
+    width: 400px;
+    -webkit-transition: border-color 1s;
+    transition: border-color 1s;
+    height: 400px;
+    border: 15px solid #333333;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -15%;
+    margin-left: 21%;
+    z-index: 1;
+  }
+
+  .wordPortfolio {
+    margin-left: 193px;
+    margin-top: 131px;
+  }
+  .wordPortfolio h1 {
+    font-size: 36px;
+  }
+  .wordPortfolio h4 {
+    font-size: 26px;
+    color: rgba(51, 51, 51, 0.3);
+  }
+
+  .aboutMe {
+    position: relative;
+    top: 300px;
+    height: 500px;
+  }
+
+  .borderAboutMe {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    margin-left: -40px;
+    border: 15px solid rgba(51, 51, 51, 0.1);
+  }
+
+  .body {
+    padding-bottom: 1px;
+  }
+
+  .smallBlueBorder {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 120px;
+    margin-left: -10px;
+    background: transparent;
+    border: 15px solid rgba(0, 199, 234, 0.1);
+    -webkit-animation-name: Rotate;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  }
+
+  .borderBlueAboutMe {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 300px;
+    background: transparent;
+    border: 15px solid rgba(0, 199, 234, 0.1);
+    -webkit-animation-name: Rotate;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes Rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  .myPhoto {
+    width: 100px;
+    height: 100px;
+    margin-left: 95px;
+    margin-top: 30px;
+  }
+  .myPhoto img {
+    width: 100px;
+  }
+
+  .textAboutMe {
+    width: 297px;
+  }
+
+  .whatAmIDoing {
+    margin-top: 440px;
+  }
+
+  .photoProject {
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 120px;
+  }
+  .photoProject img {
+    width: 50%;
+    margin-left: 13px;
+    margin-top: 2px;
+  }
+
+  .buttonProject {
+    margin-top: 30px;
+    margin-left: 63%;
+    position: absolute;
+    z-index: 13;
+  }
+
+  .contacts {
+    margin-top: 60px;
+    height: 677px;
+  }
+
+  .myContact {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .formContact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pCall {
+    text-align: center;
+    width: 100%;
+    color: #f4f4f4;
+  }
+}
+.wordPortfolio {
+  display: block;
+}
+.wordPortfolio h1 {
+  font-weight: 100;
+  color: #333333;
+}
+.wordPortfolio h4 {
+  font-size: 26px;
+  display: block;
+  color: rgba(51, 51, 51, 0.3);
+  font-weight: 100;
+  margin-left: 130px;
+}
+
+.aboutMe {
+  width: 100%;
+  padding: 30px;
+}
+
+.body {
+  overflow: hidden;
+  max-width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.borderAboutMe {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.textAboutMe {
+  color: black;
+  position: relative;
+  z-index: 6;
+}
+.textAboutMe h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+.textAboutMe h4 {
+  line-height: 1.2;
+  margin: 20px 40px;
+}
+
+.whatAmIDoing {
+  -webkit-transition: 2s;
+  transition: 2s;
+  width: 100%;
+  background: #00c7ea;
+  position: relative;
+  height: 300px;
+}
+
+.borderWhite {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 15px solid rgba(244, 244, 244, 0.8);
+  width: 200px;
+  height: 200px;
+  margin: -40px 25%;
+}
+
+.blockBlack {
+  background: rgba(51, 51, 51, 0.3);
+  width: 70%;
+  height: 70%;
+  margin: 15% auto;
+}
+
+.blockBlackText {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  font-size: 20px;
+  position: absolute;
+  margin: 62px 14px;
+}
+
+.chapterDescription {
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  z-index: 2;
+  margin: 190px 2%;
+  padding: 1px 10px;
+}
+.chapterDescription h4 {
+  line-height: 2;
+}
+
+.myProject {
+  -webkit-transition: 2s;
+  transition: 2s;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.project {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  background: #333333;
+  position: absolute;
+  margin-top: 30px;
+}
+
+.numeral {
+  font-size: 30px;
+  position: absolute;
+  color: rgba(51, 51, 51, 0.3);
+  padding-top: 20px;
+  margin-left: 130px;
+}
+
+.nameProject {
+  font-size: 30px;
+  position: absolute;
+  color: #333333;
+  margin-left: 170px;
+  padding-top: 20px;
+}
+
+.smallNameProjectOne, .smallNameProjectTwo, .smallNameProjectThree {
+  font-size: 18px;
+  position: absolute;
+  color: rgba(51, 51, 51, 0.6);
+  padding-top: 50px;
+}
+
+.smallNameProjectOne {
+  margin-left: 200px;
+}
+
+.smallNameProjectTwo {
+  margin-left: 320px;
+}
+
+.smallNameProjectThree {
+  margin-left: 370px;
+}
+
+.buttonProject {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 3px solid #333333;
+}
+.buttonProject a {
+  color: #333333;
+}
+
+.contacts {
+  background: #333333;
+  width: 100%;
+  color: #f4f4f4;
+}
+
+.myTel, .myEmail {
+  width: 100%;
+  font-size: 17px;
+}
+.myTel img, .myEmail img {
+  width: 30px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+.myTel h4, .myEmail h4 {
+  float: right;
+  padding-right: 40px;
+  letter-spacing: 2px;
+  padding-top: 6px;
+}
+
+.myEmail h4 {
+  padding-right: 70px;
+}
+
+.formContact form {
+  width: 80%;
+  padding-left: 10%;
+  margin-top: 27px;
+  z-index: 14;
+  position: absolute;
+}
+.formContact form input, .formContact form textarea {
+  display: block;
+  width: 96%;
+  color: #f4f4f4;
+  margin-bottom: 35px;
+  height: 50px;
+  padding-left: 4%;
+  border: 1px solid #f4f4f4;
+  background: #333333;
+  font-size: 18px;
+  border-radius: 10px;
+  font-family: "Minion Pro";
+}
+.formContact form textarea {
+  height: 100px;
+  padding-top: 10px;
+}
+.formContact form button {
+  width: 60%;
+  height: 50px;
+  display: block;
+  border: 1px solid #00c7ea;
+  color: #00c7ea;
+  font-size: 18px;
+  margin-left: 20%;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.formContact form button:hover {
+  -webkit-box-shadow: inset 3px -1px 20px 4px rgba(0, 199, 234, 0.2);
+          box-shadow: inset 3px -1px 20px 4px rgba(0, 199, 234, 0.2);
+}
+
+@media screen and (min-width: 579px) and (max-width: 760px) {
+  .borderWhite {
+    margin: -40px 35%;
+  }
+
+  .chapterDescription {
+    margin: 190px 5%;
+  }
+
+  .myTel, .myEmail {
+    font-size: 19px;
+  }
+  .myTel img, .myEmail img {
+    padding-left: 70px;
+  }
+  .myTel h4, .myEmail h4 {
+    padding-right: 90px;
+  }
+
+  .myEmail h4 {
+    padding-right: 120px;
+  }
+}
+.errors {
+  width: 100%;
+  height: 100vh;
+  background: #f4f4f4;
+  text-align: center;
+  padding-top: 100px;
+  color: #333333;
+}
+.errors h3 {
+  font-size: 30px;
+}
+.errors p {
+  padding: 40px;
+  font-size: 20px;
+}
+.errors a {
+  text-decoration: none;
+  color: #333333;
+  padding: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 200px;
+  border-bottom: 2px solid rgba(255, 98, 105, 0.3);
+}
+.errors a:hover {
+  color: #ff6269;
+  border-bottom: 2px solid #333333;
+}
+
+.errorsBorder {
+  width: 150px;
+  height: 150px;
+  margin-top: 250px;
+  margin-left: 50%;
+  position: absolute;
+  background: transparent;
+  border: 15px solid rgba(0, 199, 234, 0.1);
+  -webkit-animation-name: Rotate;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@media screen and (min-width: 760px) {
+  .nav__showmenu {
+    display: none;
+  }
+
+  .nav__check {
+    display: none;
+    list-style-type: none;
+  }
+
+  .menu {
+    overflow: hidden;
+    width: 60%;
+    margin-left: 40%;
+    text-align: center;
+    border-bottom: 3px solid #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background: rgba(244, 244, 244, 0.8);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .menu a {
+    float: left;
+    cursor: pointer;
+    color: #333333;
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  .borderA, .borderB, .borderC, .borderD {
+    position: absolute;
+    z-index: 2;
+    -webkit-transition: border .4s, -webkit-transform .2s linear;
+    transition: border .4s, -webkit-transform .2s linear;
+    transition: border .4s, transform .2s linear;
+    transition: border .4s, transform .2s linear, -webkit-transform .2s linear;
+    border: 6px solid rgba(244, 244, 244, 0.1);
+    top: -6px;
+  }
+
+  .borderA {
+    width: 71px;
+    height: 82px;
+  }
+
+  .borderB {
+    width: 64px;
+    height: 82px;
+  }
+
+  .borderC {
+    width: 101px;
+    height: 82px;
+  }
+
+  .borderD {
+    width: 140px;
+    height: 82px;
+  }
+
+  .borderB:hover, .borderD:hover {
+    -webkit-transform: rotate(-0.08turn);
+            transform: rotate(-0.08turn);
+    border: 6px solid rgba(0, 199, 234, 0.1);
+  }
+
+  .borderA:hover, .borderC:hover {
+    -webkit-transform: rotate(0.08turn);
+            transform: rotate(0.08turn);
+    border: 6px solid rgba(0, 199, 234, 0.1);
+  }
+
+  .borderPortfolio {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 17px solid #333333;
+    -webkit-transition: border-color 1s, -webkit-transform 3s;
+    transition: border-color 1s, -webkit-transform 3s;
+    transition: border-color 1s, transform 3s;
+    transition: border-color 1s, transform 3s, -webkit-transform 3s;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 40px;
+    left: -46px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .borderDiv {
+    z-index: 1;
+    width: 383px;
+    height: 383px;
+    background: #f4f4f4;
+    -webkit-transition: width 3s, -webkit-transform 3s;
+    transition: width 3s, -webkit-transform 3s;
+    transition: width 3s, transform 3s;
+    transition: width 3s, transform 3s, -webkit-transform 3s;
+  }
+
+  .wordPortfolio {
+    z-index: 2;
+    position: absolute;
+    margin-left: 153px;
+    margin-top: 238px;
+    display: block;
+  }
+  .wordPortfolio h1 {
+    font-size: 36px;
+    color: #333333;
+  }
+  .wordPortfolio h4 {
+    font-size: 26px;
+  }
+
+  .body {
+    padding-bottom: 1px;
+  }
+
+  .borderAboutMe {
+    width: 400px;
+    position: absolute;
+    height: 400px;
+    margin-left: 330px;
+    margin-top: 450px;
+    border: 17px solid rgba(51, 51, 51, 0.1);
+  }
+
+  .borderBlueAboutMe {
+    width: 250px;
+    position: absolute;
+    height: 250px;
+    border: 17px solid rgba(0, 199, 234, 0.1);
+    margin-left: 221px;
+    margin-top: 740px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+
+  .myPhoto {
+    width: 140px;
+    margin-top: 500px;
+    height: 140px;
+    margin-left: 109px;
+  }
+  .myPhoto img {
+    width: 140px;
+  }
+
+  .textAboutMe {
+    width: 361px;
+    margin-left: 366px;
+  }
+
+  .borderBlueAboutMe {
+    -webkit-animation: bgcolorchange 10s infinite;
+    /* Chrome, Safari, Opera */
+    -webkit-transition: 5s;
+    transition: 5s;
+    -webkit-animation: 10s infinite bgcolorchange;
+            animation: 10s infinite bgcolorchange;
+  }
+
+  @-webkit-keyframes bgcolorchange {
+    0% {
+      border-color: rgba(0, 199, 234, 0.1);
+    }
+    25% {
+      border-color: rgba(0, 199, 234, 0.3);
+    }
+    50% {
+      border-color: rgba(0, 199, 234, 0.3);
+    }
+    75% {
+      border-color: rgba(255, 98, 105, 0.3);
+    }
+    100% {
+      border-color: rgba(255, 98, 105, 0.1);
+    }
+  }
+
+  @keyframes bgcolorchange {
+    0% {
+      border-color: rgba(0, 199, 234, 0.1);
+    }
+    25% {
+      border-color: rgba(0, 199, 234, 0.3);
+    }
+    50% {
+      border-color: rgba(0, 199, 234, 0.3);
+    }
+    75% {
+      border-color: rgba(255, 98, 105, 0.3);
+    }
+    100% {
+      border-color: rgba(255, 98, 105, 0.1);
+    }
+  }
+  /* Chrome, Safari, Opera */
+  .whatAmIDoing {
+    margin-top: 300px;
+  }
+
+  .borderWhite {
+    margin: -40px 40%;
+  }
+
+  .smallNameProjectOne {
+    margin-left: 210px;
+  }
+
+  .smallNameProjectTwo {
+    margin-left: 360px;
+  }
+
+  .smallNameProjectThree {
+    margin-left: 410px;
+  }
+
+  .photoProject {
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 100px;
+  }
+  .photoProject img {
+    width: 25%;
+    z-index: 4;
+    position: relative;
+    -webkit-transition: 1s;
+    transition: 1s;
+    margin-left: 13px;
+    margin-top: 2px;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    opacity: .7;
+  }
+  .photoProject img:hover {
+    -webkit-filter: none;
+            filter: none;
+    opacity: 1;
+    z-index: 6;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+
+  .buttonProject {
+    margin-top: 50px;
+    margin-left: 74%;
+  }
+
+  .contacts {
+    height: 500px;
+    margin-top: 60px;
+  }
+
+  .myContact {
+    width: 50%;
+    padding-top: 50px;
+  }
+
+  .myTel img, .myEmail img {
+    width: 25px;
+    padding-left: 13%;
+  }
+  .myTel h4, .myEmail h4 {
+    padding-right: 6%;
+    letter-spacing: 1.3px;
+    padding-top: 5px;
+  }
+
+  .myEmail h4 {
+    padding-right: 11%;
+  }
+
+  .formContact {
+    width: 50%;
+    text-align: center;
+    float: right;
+  }
+  .formContact form {
+    width: 80%;
+    padding-left: 10%;
+    position: relative;
+    margin-top: -145px;
+  }
+}
+.pCall {
+  text-align: center;
+  width: 100%;
+  color: #f4f4f4;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .borderA {
+    width: 130px;
+    height: 100px;
+    left: 14px;
+  }
+
+  .borderB {
+    width: 120px;
+    height: 100px;
+    left: 170px;
+  }
+
+  .borderC {
+    width: 150px;
+    height: 100px;
+    left: 320px;
+  }
+
+  .borderD {
+    width: 190px;
+    height: 100px;
+    right: 6px;
+  }
+
+  .borderPortfolio {
+    width: 550px;
+    height: 550px;
+    border: none;
+    -webkit-transition: width 3s, -webkit-transform 3s;
+    transition: width 3s, -webkit-transform 3s;
+    transition: width 3s, transform 3s;
+    transition: width 3s, transform 3s, -webkit-transform 3s;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: 40px;
+    left: -46px;
+    background: -webkit-gradient(linear, right top, left top, from(#333333), to(#00c7ea));
+    background: linear-gradient(270deg, #333333, #00c7ea);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 13s ease infinite;
+            animation: AnimationName 13s ease infinite;
+  }
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
+  .borderDiv {
+    width: 514px;
+    height: 514px;
+    margin: 17px auto;
+  }
+
+  .wordPortfolio h1 {
+    font-size: 48px;
+    margin-left: 68px;
+    margin-top: 54px;
+  }
+  .wordPortfolio h4 {
+    font-size: 36px;
+    margin-left: 240px;
+  }
+
+  .borderAboutMe {
+    width: 500px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    height: 500px;
+    margin-left: 524px;
+    margin-top: 650px;
+  }
+
+  .borderBlueAboutMe {
+    width: 350px;
+    height: 350px;
+    -webkit-transition: 3s;
+    transition: 3s;
+    margin-left: 246px;
+    margin-top: 970px;
+  }
+
+  .myPhoto {
+    width: 140px;
+    margin-top: 710px;
+    height: 140px;
+    margin-left: 109px;
+  }
+  .myPhoto img {
+    width: 140px;
+  }
+
+  .textAboutMe {
+    width: 361px;
+    margin-left: 611px;
+    margin-top: 290px;
+  }
+  .textAboutMe h4 {
+    line-height: 2;
+  }
+
+  .whatAmIDoing {
+    margin-top: 400px;
+    background: -webkit-gradient(linear, left top, right top, from(#29b8e5), color-stop(56%, #29b8e5), color-stop(65%, #45bfe7), to(#b3dced));
+    background: linear-gradient(to right, #29b8e5 0%, #29b8e5 56%, #45bfe7 65%, #b3dced 100%);
+  }
+
+  .borderWhite {
+    border-width: 17px;
+    width: 250px;
+    height: 250px;
+    margin: -78px 40%;
+  }
+
+  .chapterDescription {
+    margin: 210px 5%;
+  }
+  .chapterDescription h4 {
+    font-size: 18px;
+  }
+
+  .blockBlackText {
+    margin: 76px 22px;
+    font-size: 24px;
+  }
+
+  .borderAnimateThree {
+    margin-left: 300px;
+    margin-top: -100px;
+  }
+
+  .borderAnimateOne {
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+
+  @-webkit-keyframes Rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  .borderAnimateOne, .borderAnimateTwo, .borderAnimateThree {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 17px solid rgba(244, 244, 244, 0.1);
+    -webkit-animation-name: Rotate;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  }
+
+  .photoProject {
+    margin-top: 120px;
+  }
+  .photoProject img {
+    width: 20%;
+    margin-left: 13px;
+    margin-top: 2px;
+  }
+
+  .buttonProject {
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 78%;
+    overflow: hidden;
+  }
+  .buttonProject div {
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgba(0, 199, 234, 0.3);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: 400ms;
+    transition: 400ms;
+    margin-top: 90px;
+  }
+
+  .buttonProject:hover div {
+    margin-top: 25px;
+  }
+
+  .photoProject img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+
+  .myContact {
+    padding-top: 80px;
+  }
+
+  .myTel, .myEmail {
+    font-size: 20px;
+  }
+  .myTel img, .myEmail img {
+    width: 30px;
+  }
+  .myTel h4, .myEmail h4 {
+    padding-right: 24%;
+    letter-spacing: 1.3px;
+    padding-top: 5px;
+  }
+
+  .myEmail h4 {
+    padding-right: 28%;
+  }
+}

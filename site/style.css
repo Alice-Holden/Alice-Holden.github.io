@@ -1,0 +1,1279 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@media screen and (min-width: 360px) {
+	.logo{
+		float: left;
+		margin-left: 3%;
+		height: 40%;
+		padding: 30px;
+	}
+	.links_to_pages{
+		height: 100px;
+
+
+
+	}
+	
+	.link{
+		padding-top: 10px;
+		margin-left: 2px;
+		list-style-type: none;
+		z-index: 40;
+		color: white;
+		float: left;
+		column-count: auto;
+		column-width: 100px;
+
+
+	} 
+	.link>a{
+		height: 12px;
+	}
+	.creatives{
+		font-size: 4em;
+		margin-top: 40%;
+	}
+	#table_photo{
+		height: 475px;
+	}
+	.company_face{
+		height: 475px;
+	}
+	.other_feature{
+		height: 700px;
+	}
+	.page{
+		height: 900px;
+	}
+	.circle{
+		height: 80px;
+		width: 80px;
+	}
+	.feature img{
+		height: 20px;
+		margin-top: 32px;
+	}
+	.slogan{
+		height: 250px;
+	}
+	.w{
+		height: 250px;
+	}
+	.w>img{
+		width: 250px;
+	}
+	.we_are{
+		margin-top: 110px;
+		letter-spacing: .3em;
+		font-size: 1.2em;
+	}
+	.d_circle{
+		padding-top: 40px;
+		height: 100px;
+		width: 30%;
+		float: left;
+	}
+	.d_Feat{
+		padding-top: 10px;
+		width: 60%;
+		float: left;
+	}
+	
+	.feature {
+		width: 100%;
+		margin-left: 10px;
+	}
+	.d_Feat h3{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.block_one{
+		padding-top: 1%;
+		padding-left: 3%;
+		padding-right: 2%;
+		width: 44%;
+	}
+	.block_two{
+		width: 44%;
+		padding-top: 1%;
+		padding-left: 3%;
+		padding-right: 2%;
+	}
+	.sloganB{
+		margin-top: 10px;
+		height: 220px;
+	}
+	.B{	
+		height: 220px;
+		
+	}
+	.B>img{
+		width: 120px;
+	}
+	.lets{
+		letter-spacing: .4em;
+		font-size: 1.5em;
+		margin-top: 73px;
+
+	}
+	.we_love{
+		font-size: .7em;
+		letter-spacing: .3em;
+	}
+	.our_photo{
+		margin-top: 30px;
+		height: 550px;
+	}
+	
+	.block_ph{
+		width: 30%;
+		height: 70px;
+		float: left;
+		overflow: hidden;
+
+	}
+	.block_ph>img{
+		width: 100%;
+	}
+
+	.photo{
+		padding-top: 20px;
+		margin-left: 5%;
+		width: 90%;
+		
+	}
+	.ph_t{
+		margin-left: 10px;
+		width: 60%;
+		float: left;
+	}
+	.ph_t>h3{
+		font-size: 1em;
+		
+	}
+	.ph_t>p{
+		line-height: 1;
+		font-size: .8em;
+	}
+	
+	.d_text{
+		width: 80%;
+		margin-top: 20px;
+		margin-left: 8%;
+
+	}
+	.d_img{
+		margin-left: 18%;
+		height: 610px;
+		width: 310px;
+		margin-top: 70px;
+		margin-right: 6%;
+	}
+	.design{
+		height: 1100px;
+	}
+	.d_background{
+		width: 0;
+		height: 100%;
+	}
+	.d_img_1{
+		height: 100%;
+	}
+	.sloganT{
+		margin-top: 16px;
+		height: 150px;
+	}
+	.T{	
+		height: 150px;
+	
+	}
+	.team{
+		letter-spacing: .4em;
+		font-size: 1.2em;
+		margin-top: 70px;
+
+	}
+	.sloganSal{
+		padding-top: 20px;
+		font-size: 1em;
+		letter-spacing: 2px;
+	}
+	.photo_t{
+		width: 40%;
+		margin-right: 13%;
+		margin-left: 23%;
+	}
+	.slogan_C{
+		letter-spacing: .2em;
+		font-size: 1em;
+	}
+	.sub>button{
+		height: 30px;
+		width: 70px;
+		letter-spacing: .2em;
+		font-size: .6em;
+	}
+	.form2{
+		width: 92%;
+
+	}
+	.form1{
+		width: 90%;
+		margin-top:10px; 
+	}
+
+
+	
+}
+@media screen and (min-width: 768px) { 
+	.logo{
+		float: left;
+		margin-left: 6%;
+		padding-top: 10px;
+		height: 60%;
+	}
+	.link{
+		padding-top: 20px;
+		margin-left: 3%;
+		list-style-type: none;
+		z-index: 40;
+		color: white;
+		float: left;
+		column-count: auto;
+		column-width: auto;
+
+
+	}
+	.links_to_pages{
+		height: 60px;
+
+	}
+	.link>a{
+		height: 40px;
+	}
+	.creatives{
+		font-size: 6em;
+		margin-top: 20%;
+	}
+	#table_photo{
+		height: 575px;
+	}
+	.company_face{
+		height: 575px;
+	}
+	.other_feature{
+		height: 400px;
+	}
+	.page{
+		height: 750px;
+	}
+	.circle{
+		height: 100px;
+		width: 100px;
+	}
+	.feature img{
+		height: 20px;
+		margin-top: 42px;
+	}
+	.slogan{
+		height: 300px;
+	}
+	.w{
+		height: 300px;
+	}
+	.w>img{
+		width: 300px;
+	}
+	.we_are{
+		margin-top: 140px;
+		letter-spacing: .4em;
+		font-size: 1.3em;
+	}
+	.d_circle{
+		height: 100px;
+		width: 50%;
+	}
+	.d_Feat{
+		width: 50%;
+
+	}
+	.d_Feat h3{
+		margin-bottom: 20px;
+	}
+	
+	
+	.feature {
+		width: 45%;
+		margin-left: 1%;
+	}
+	.sloganB{
+		margin-top: 20px;
+		height: 300px;
+	}
+	.B{	
+		height: 300px;
+		
+	}
+	.B>img{
+		width: 160px;
+	}
+	.lets{
+		letter-spacing: .5em;
+		font-size: 1.8em;
+		margin-top: 100px;
+
+	}
+	.we_love{
+		font-size: 1.3em;
+		letter-spacing: .11em;
+	}
+	.our_photo{
+		margin-top: 50px;
+		height: 400px;
+	
+	}
+	.block_ph{
+		padding-top: 40px;
+		width: 30%;
+		height: 70px;
+		float: left;
+		overflow: hidden;
+
+	}
+	.block_ph>img{
+		width: 100%;
+	}
+
+	.photo{
+		padding-top: 20px;
+		margin-left: 5%;
+		width: 45%;
+		
+	}
+	.ph_t{
+		margin-left: 10px;
+		width: 60%;
+		float: left;
+	}
+	.ph_t>h3{
+		font-size: 1em;
+		margin-top: 0;
+		
+	}
+	.ph_t>p{
+		line-height: 1.3;
+		font-size: .8em;
+	}
+	.d_text{
+		float: left;
+		position: absolute;
+		width: 37%;
+		margin-top: 170px;
+		margin-left: 8%;
+		height: 500px;
+
+	}
+	.d_img{
+		height: 610px;
+		width: 310px;
+		margin-top: 70px;
+		margin-right: 6%;
+		float: right;
+		margin-left: 0;
+
+	}
+	.design{
+		height: 775px;
+	}
+	.d_background{
+		width: 100%;
+		height: 0;
+	}
+	.d_img_1{
+		height: 775px;
+	}
+	.sloganT{
+		margin-top: 30px;
+		height: 200px;
+	}
+	.T{	
+		height: 200px;
+	
+	}
+	.team{
+		letter-spacing: .5em;
+		font-size: 1.5em;
+		margin-top: 100px;
+
+	}
+	.sloganSal{
+		padding-top: 30px;
+		font-size: 1.5em;
+		letter-spacing: .13em;
+	}
+	.our_ph{
+		width: 100%;
+		text-align: center;
+		padding-left: 100px;
+	}
+	.photo_t{
+		width: 250px;
+		margin-right: 3%;
+		margin-left: 4%;
+	}
+	.con_img{
+		width: 100%;
+	}
+	.slogan_C{
+		letter-spacing: .5em;
+		font-size: 1.3em;
+	}
+	.sub>button{
+		height: 50px;
+		width: 100px;
+		letter-spacing: .3em;
+		font-size: .8em;
+	}
+	.con_img{
+		height:100%; 
+		width: 100%;
+	}
+	.form2{
+		width: 88%;
+
+	}
+	.form1{
+		width: 26%;
+	}
+
+}
+@media screen and (min-width: 1200px) {
+	.logo{
+		float: left;
+		margin-left: 7%;
+		height: 70%;
+		padding-top: 10px; 
+	}
+	.link{
+		padding-top: 20px;
+		margin-left: 7%;
+		list-style-type: none;
+		z-index: 40;
+		color: white;
+		float: left;
+		column-count: auto;
+		column-width: auto;
+	} 
+
+	.links_to_pages{
+		height: 60px;
+
+	}
+	.creatives{
+		font-size: 6em;
+		margin-top: 20%;
+	}
+	#table_photo{
+		height: 775px;
+	}
+	.company_face{
+		height: 775px;
+	}
+	.other_feature{
+		height: 400px;
+	}
+	.page{
+		height: 750px;
+	}
+
+	.circle{
+		height: 150px;
+		width: 150px;
+	}
+	.feature {
+		margin-left: 4%;
+	}
+	.feature img{
+		height: 30px;
+		margin-top: 62px;
+	}
+	.slogan{
+		height: 350px;
+	}
+	.w{
+		height: 350px;
+	}
+	.w>img{
+		width: 350px;
+	}
+	.we_are{
+		margin-top: 157px;
+		letter-spacing: .5em;
+		font-size: 1.5em;
+	}
+	.d_circle{
+		height: 100px;
+		width: 80%;
+	}
+	.d_Feat{
+		padding-top: 50px;
+		height: 100px;
+		width: 100%;
+	}
+	.feature {
+		width: 20%;
+	}
+	.d_Feat h3{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.block_one{
+		padding-top: 3%;
+		padding-left: 8%;
+		padding-right: 8%;
+		width: 30%;
+	}
+	.block_two{
+		width: 30%;
+		padding-top: 3%;
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+		.sloganB{
+		margin-top: 30px;
+		height: 350px;
+	}
+	.B{	
+		height: 350px;
+		
+	}
+	.B>img{
+		width: 200px;
+	}
+	.lets{
+		letter-spacing: .5em;
+		font-size: 2em;
+		margin-top: 130px;
+
+	}
+	.we_love{
+		font-size: 1.5em;
+		letter-spacing: .13em;
+	}
+	.our_photo{
+		margin-top: 70px;
+		height: 500px;	
+	}
+	.block_ph{
+		width: 100%;
+		height: 160px;
+
+	}
+	.block_ph>img{
+		width: 100%;
+	}
+	.photo{
+		margin-left: 4%;
+		width: 20%;
+		
+	}
+	.ph_t>h3{
+		font-size: 1.2em;
+		margin-top: 40px;
+		
+	}
+
+	.ph_t>p{
+		line-height: 1.4;
+		font-size: .9em;
+		width: 95%;
+
+	}
+	.ph_t{
+		margin-left: 10px;
+		width: 100%;
+		float: left;
+	}
+	.d_text{
+		float: left;
+		position: absolute;
+		width: 30%;
+		margin-top: 200px;
+		margin-left: 15%;
+		height: 500px;
+
+	}
+	.d_img{
+		height: 610px;
+		width: 310px;
+		margin-top: 70px;
+		margin-right: 15%;
+		float: right;
+		margin-left: 0;
+	}
+	.design{
+		height: 775px;
+	}
+	.d_background{
+		width: 100%;
+		height: 0;
+	}
+	.d_img_1{
+		height: 775px;
+	}
+	.sloganT{
+		margin-top: 30px;
+		height: 200px;
+	}
+	.T{	
+		height: 200px;
+	
+	}
+	.team{
+		letter-spacing: .5em;
+		font-size: 1.5em;
+		margin-top: 100px;
+
+	}
+	.sloganSal{
+		padding-top: 30px;
+		font-size: 1.5em;
+		letter-spacing: .13em;
+	}
+	.our_ph{
+		width: 100%;
+		text-align: center;
+		padding-left: 40px;
+	}
+	.photo_t{
+		width: 250px;
+		margin-right: 0;
+		margin-left: 4%;
+	}
+	.con_img{
+		width: 100%;
+	}
+	.slogan_C{
+		letter-spacing: .5em;
+		font-size: 1.5em;
+	}
+	.sub>button{
+		height: 50px;
+		width: 100px;
+		letter-spacing: .3em;
+		font-size: .8em;
+	}
+	.form2{
+		width: 87%;
+
+	}
+	.form1{
+		width: 26%;
+	}
+
+}
+.company_face{
+	width: 100%;
+	background: black;
+	position: relative;
+	overflow: hidden;
+
+}
+#table_photo{
+	opacity: 0.2;
+	z-index: 30;
+	position: absolute;
+}
+
+.link>a{
+	z-index: 99;
+	display: block;
+	text-decoration: none;
+	color: white;
+
+}
+.link>a:hover{
+	border-bottom: 5px solid #4C7599;
+
+}
+
+.links_to_pages{
+	/*overflow: hidden;*/
+	z-index: 98;
+	background: black;
+    opacity: 0.6;
+    position: fixed;
+	width: 100%;
+	border-bottom: 5px solid rgba(169,169,169,0.2);
+
+}
+
+
+.navig{
+	display: block;
+	height: 100%;
+	font-family: Tahoma;
+}
+.png1{
+	padding-top: 10px;
+	margin-left: 5%;
+	opacity: 0.2;
+	height: 25px;
+	float: left;
+}
+.png2{
+	opacity: 0.2;
+	padding-top: 13px;
+	margin-left: 1%;
+	height: 20px;
+	float:left;
+} 
+.png3{
+	opacity: 0.2;
+	padding-top: 13px;
+	margin-left: 1%;
+	height: 20px;
+	float:left;
+}
+.creatives{
+	position: absolute;
+	z-index: 51;
+	float: left;
+	color: white;
+	text-align: center;
+	letter-spacing: 0;
+	width: 100%;
+	font-family: 'Arial';
+	font-weight: bold;
+
+}
+.power{
+	font-weight: normal;
+	font-family: Verdana;
+	width: 100%;
+	text-align: center;
+	font-size: .2em;
+	position: absolute;
+	z-index: 51;
+	margin-top: 20px;
+	color: #4C7599;
+	letter-spacing: .5em;
+}
+.page{
+	padding-top: 30px;
+	background: #4C7599;
+	width: 100%;
+	position: relative;
+}
+.slogan{
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: relative;
+	overflow: hidden;
+}
+.w{	
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	overflow: hidden;
+}
+.w>img{
+	opacity: 0.4;
+}
+.we_are{
+	overflow: hidden;
+	font-family: Verdana;
+	position: absolute;
+	width: 100%;
+	text-align:center;
+}
+.other_feature{
+	width: 100%;
+	overflow: hidden;
+
+}
+.circle{
+	text-align: center;
+	margin-left: 30%; 
+	border-radius: 50%;
+	background: #5582A6;
+}
+.feature {
+	text-align: center;
+	float: left;
+	color: white;
+	font-family: Tahoma;
+
+}
+.d_Feat h3{
+	text-align: center;	
+}
+.d_Feat p{
+	text-align: left;
+}
+
+.our_work{
+	width: 100%;
+}
+.job{
+	background:#302D2B;
+	overflow: hidden;
+	width: 100%;
+}
+.work{
+	overflow: hidden;
+	width: 100%;
+	background:#F3F3F3;
+}
+
+.block_one{
+	font-size: .8em;
+	font-family: Arial;
+	float: left;
+	text-align: left;
+	color: #F3F3F3;
+}
+.block_one>h3{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.block_one>p{
+	letter-spacing: 2px;
+	line-height: 1.8;
+}
+.block_i{
+	width: 50%;
+	float: right;
+}
+.block_two{
+	font-size: .8em;
+	font-family: Arial;
+	float: right;
+	text-align: left;
+	color: #302D2B;
+}
+.block_two>h3{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.block_two>p{
+	letter-spacing: 2px;
+	line-height: 1.8;
+}
+.block_img{
+	width: 50%;
+	float: left;
+}
+.extension{
+	padding-top: 40px;
+	background: white;
+	width: 100%;
+	position: relative;
+}
+.sloganB{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.B{	
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	overflow: hidden;
+}
+.B>img{
+	opacity: 0.3;
+}
+.lets{
+	overflow: hidden;
+	font-family: Arial;
+	position: absolute;
+	width: 100%;
+	text-align:center;
+	font-weight: bold;
+}
+.we_love{
+	width: 100%;
+	text-align: center;
+	font-family: Arial;
+}
+
+.our_photo{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.block_ph{
+	text-align: center;
+	overflow: hidden;
+
+}
+.photo{
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	font-family: Tahoma;
+}
+.ph_t>h3{
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	color: #4C7599;
+}
+.ph_t>p{
+	text-align: left;
+}
+
+
+.description{
+	padding-top: 100px;
+	padding-left: 5%;
+	background: #4C7599;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+.des_block{
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.3;
+	color: white;
+	font-family: Tahoma;
+	float: left;
+	width: 40%;
+	margin-left: 3%;
+	padding: 5px;
+
+}
+.des_block_img{
+	margin-right: 4%;
+	width: 16%;
+	float: left;
+
+}
+.des_block_img>img{
+	width: 100%;
+}
+
+.design{
+	position: relative;
+	background: black;
+	width: 100%;
+	overflow: hidden;
+}
+
+.d_background{
+	opacity: 0.2;
+	z-index: 70;
+	position: absolute;
+}
+
+
+.d_text{
+	font-family: Tahoma;
+	z-index: 72;
+}	
+.d_text_one{
+	line-height: 1.3;
+	color: white;
+	text-align: justify;
+}
+.d_text_one>h3{
+	letter-spacing: .1em;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+	font-weight: bold;
+
+}
+
+.d_text_two{
+	color: white;
+	width: 50%;
+	margin-top: 40px;
+	background: #4C7599;
+	padding: 10px 20px;
+	font-size: .8em;
+}
+.d_text_three{
+	color: white;
+	width: 70%;
+	margin-top: 30px;
+	background: #4C7599;
+	padding: 10px 20px;
+	font-size: .8em;
+}
+.d_text_four{
+	color: white;
+	width: 90%;
+	margin-top: 30px;
+	background: #4C7599;
+	padding: 10px 20px;
+	font-size: .8em;
+}
+
+.d_img{
+	overflow: hidden;
+	z-index: 75;
+	position: relative;
+}
+
+.d_img_2{
+	position: absolute;
+	z-index: 74;
+	float:left;
+	width: 90%;
+	margin-right: 13px;
+	border-radius: 40px;
+	margin-left: 5px;
+}
+.d_img_3{
+	overflow: hidden;
+	height: 100%;
+	position: absolute;
+	z-index: 75;
+	float: left;
+}
+.our_face{
+	height: 850px;
+	padding-top: 40px;
+	background: white;
+	width: 100%;
+	position: relative;
+}
+.sloganT{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.T{	
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	overflow: hidden;
+}
+.T>img{
+	height: 100%;
+	opacity: 0.3;
+}
+.team{
+	overflow: hidden;
+	font-family: Arial;
+	position: absolute;
+	width: 100%;
+	text-align:center;
+	font-weight: bold;
+
+}
+.sloganSal{
+	width: 100%;
+	text-align: center;
+	font-family: Arial;
+	margin:0 auto; 
+
+}
+.photo_t{
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	
+}
+
+
+.who_name{
+	font-family: Arial;
+	text-align: center;
+	border: 1px solid gray;
+	width: 150px;
+	margin-left: 50px;
+	padding-top: 5px;
+	line-height: 1.3;
+	padding-bottom: 5px;
+	margin-top: -30px;
+	background:#F3F3F3;
+	position: absolute;
+
+}
+.who_name>h3{
+	color: #4C7599;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: .13em;
+
+}
+.who_name>p{
+	font-size: .8em;
+}
+.contactss{
+	overflow: hidden;
+	position: relative;
+	height: 750px;
+	background: black;
+	width: 100%;
+}
+.con_img{
+	-webkit-filter: grayscale(100%);
+	opacity: 0.2;
+	position: absolute;
+	z-index: 90;
+}
+.sloganC{
+	z-index: 91;
+	margin-top: 70px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+}
+.C{	
+	width: 100%;
+	text-align: center;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	z-index: 92;
+}
+.C>img{
+	height: 100%;
+	opacity: 0.3;
+}
+.slogan_C{
+	z-index: 94;
+	overflow: hidden;
+	font-family: Arial;
+	position: absolute;
+	width: 100%;
+	text-align:center;
+	margin-top: 100px;
+	font-weight: bold;
+	color: white;
+}
+.form{
+	position: absolute;
+	padding-top: 130px;
+	width: 80%;
+	padding-left: 13%;
+	height: 200px;
+	z-index: 98;
+
+}
+.form1{
+	padding-left: 10px;
+	color: white;
+	float: left;
+	background: black;
+	height: 30px;
+	margin-right: 1%;
+	margin-left: 2%;
+	opacity: 0.4;
+	font-size: 1em;
+	outline:none;
+}
+
+.form2{
+	padding-left: 10px;
+	margin-top: 40px;
+	color: white;
+	float: left;
+	background: black;
+	height: 70px;
+	margin-left: 2%;
+	opacity: 0.4;
+	font-size: 1em;
+	outline:none;
+}
+.sub{
+	text-align: center;
+	width: 90%;
+	float: left;
+	height: 70px;
+	margin-top: 30px;
+}
+.sub>button{
+	background: #4C7599;
+	outline:none;
+	color: white;
+	font-family: Arial;
+	cursor: pointer;
+}
+.upstairs{
+	text-align: center;
+	display: block;
+	position: fixed; 
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 30px;
+    padding: 12px 10px 2px;
+    font-size: 16px;
+    opacity: 0.3; 
+    background: #4C7599;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

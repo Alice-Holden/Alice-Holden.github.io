@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Resume</title>
+	<link rel="shortcut icon" href="img/main/ico.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="body"> 
+	
+
+<nav class="nav">
+  <input class="nav__check" type="checkbox" id="showmenu"/>
+  <label class="nav__showmenu" for="showmenu">&#9776;</label>
+  <label class="nav__back" for="showmenu"></label>
+
+  <ul class="menu">
+    <li><a href="index.html"><div class="borderA"></div></a><a class="menu__item" href="/">Главная</a></li>
+    <li><a href="#aboutMe"><div class="borderB"></div></a><a class="menu__item" href="#aboutMe">Кто я?</a></li>
+    <li><a href="#whatiDo"><div class="borderC"></div></a><a class="menu__item" href="#whatiDo">Что я делаю?</a></li>
+    <li><a href="#callMe"><div class="borderD"></div></a><a class="menu__item" href="#callMe">Связаться со мной</a></li>
+  </ul>
+</nav>
+
+	<div class="borderPortfolio"><div class="borderDiv"></div></div>
+	<div class="wordPortfolio">
+		<h1>Портфолио</h1>
+	
+		<h4>Резюме</h4>
+	</div>
+
+<div class="smallBlueBorder"></div>
+<div class="aboutMe"><a name="aboutMe">
+			<div class="borderAboutMe"></div>
+			<div class="borderBlueAboutMe"></div>
+			<div class="textAboutMe">
+				<div class="myPhoto">
+					<img src="img/main/me.jpg" alt="myPhoto">
+					
+				</div>
+					<h1>Кто я?</h1>
+					<h4 style="padding-left: 15px;">Frontend developer. <p style="color: grey; line-height: 1;">HTML5, CSS3, SCSS, SASS, Git, JQuery, Node.JS, JavaScript, English language (Intermediate).</p></h4><h4 style="padding-left: 15px;"> QA Engineer Junior<p style="color: grey;line-height: 1;">Manual testing, regression testing, responsive layout, Atlassian Jira.</p></h4>
+
+			</div>
+			
+		</div>
+<a name="whatiDo"><div class="whatAmIDoing">
+	<div class="borderAnimateOne"></div>
+	<div class="borderAnimateThree"></div>
+		<div class="borderWhite">
+			<div class="blockBlack">
+				<div class="blockBlackText">
+					<h1>Что я делаю?</h1>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="chapterDescription">
+			<h4>Создаю сайты используя свой или готовый дизайн. Ниже размещены мои работы.</h4>
+		</div>
+		<div class="borderAnimateTwo"></div>
+</div>
+<div class="myProject">
+	<div class="project">
+		<div class="line"></div>
+		<div class="numeral"><h1>01</h1></div>
+		<div class="nameProject"><h2>Coffee</h2></div>
+		<div class="smallNameProjectOne"><h2>HTML5, CSS, JS, JQ, Node.js</h2></div>
+		<div class="photoProject"><img src="img/main/coffeeOne.png" alt="photoProject"><img src="img/main/CoffeeTwo.png" alt="photoProject"><img src="img/main/CoffeeThree.png" alt="photoProject"></div>
+		<a href="coffee.html" style="color: #333333;"><div class="buttonProject">Перейти на сайт<div></div></div></a>
+	</div>
+
+
+		<div class="project">
+		<div class="line"></div>
+		<div class="numeral"><h1>02</h1></div>
+		<div class="nameProject"><h2>Модельное агенство</h2></div>
+		<div class="smallNameProjectTwo"><h2>HTML5, CSS, JS, JQ</h2></div>
+		<div class="photoProject"><img src="img/main/modelOne.png" alt="photoProject"><img src="img/main/modelTwo.png" alt="photoProject"><img src="img/main/modelThree.png" alt="photoProject"></div>
+		<a href="model/model.html" style="color: #333333"><div class="buttonProject">Перейти на сайт<div></div></div></a>
+	</div>
+
+
+		<div class="project">
+		<div class="line"></div>
+		<div class="numeral"><h1>03</h1></div>
+		<div class="nameProject"><h2>Одностраничный сайт</h2></div>
+		<div class="smallNameProjectThree"><h2>HTML5, CSS</h2></div>
+		<div class="photoProject"><img src="img/main/siteOne.png" alt="photoProject"><img src="img/main/siteTwo.png" alt="photoProject"><img src="img/main/SiteThree.png" alt="photoProject"></div>
+		<a href="site/site.html" style="color:#333333"><div class="buttonProject"> Перейти на сайт <div></div></div></a>
+	</div>
+	
+</div>
+
+<div class="contacts"><a name=callMe>
+	<div class="myContact">
+		<div class="myTel">
+			<img src="img/main/call.png" alt="iconTel">
+			<h4>+79132266461(WhatsApp и Telegram)</h4>
+		</div>
+		<div class="myEmail">
+			<img src="img/main/email (1).png" alt="iconEmail">
+			<h4>for.work.webdeveloper@gmail.com</h4>
+		</div>
+		
+	</div>
+
+<div class="formContact">
+		<form id="formCallMe"  >
+					<input type="text" placeholder="Введите Ваше имя" name="name" required >
+					<div class="error_name"></div>
+					<input type="text" name="phone" placeholder="89000000000" pattern="[0-9]{5,12}" required title="вводите только цифры">
+					<div class="error_phone"></div>
+					<textarea name="text" placeholder="Данная форма отключена, тк используется GitHub Pages"></textarea>
+					<button>Вы мне интересны</button>
+					</form>
+		
+	</div>
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="js/index.js"></script>
+
+
+</div>
+</body>
+</html>
